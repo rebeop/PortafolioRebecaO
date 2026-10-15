@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebeca Ortega · Portafolio</title>
+</head>
+<style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f4ead9; color: #2e2540; }
+    .menu { display: flex; justify-content: space-between; padding: 20px 40px; border-bottom: 1px solid #e0d3ba; }
+    .menu a { color: #2e2540; text-decoration: none; margin-left: 20px; }
+    .menu a:hover { color: #6b46c1; }
+
+    section { padding: 50px 30px; max-width: 850px; margin: 0 auto; }
+    h1, h2 { color: #2e2540; }
+    h1 span, h2 span { color: #6b46c1; }
+
+    .etiqueta, .habilidad, .etiqueta-tipo {
+        display: inline-block; border-radius: 20px; padding: 6px 15px; font-size: 13px; margin: 4px 4px 0 0;
+    }
+    .etiqueta, .etiqueta-tipo { background: #e4d9f7; color: #6b46c1; }
+    .habilidad { background: white; }
+
+    .foto { width: 260px; border-radius: 15px; display: block; margin: 20px 0; }
+
+    .btn { display: inline-block; padding: 10px 22px; border-radius: 25px; text-decoration: none; font-weight: bold; margin: 20px 10px 0 0; }
+    .btn-lila { background: #6b46c1; color: white; }
+    .btn-borde { border: 2px solid #6b46c1; color: #6b46c1; }
+
+    .tarjetas, .proyectos { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px; }
+    .tarjeta, .proyecto, .contacto-info {
+        background: white; border-radius: 15px; padding: 18px; flex: 1; min-width: 220px;
+    }
+    .titulo { color: #6b46c1; font-size: 12px; font-weight: bold; }
+    .proyecto img { width: 100%; }
+    .contacto-info { display: flex; align-items: center; gap: 12px; }
+    .contacto-info a { color: #2e2540; }
+    .contacto-info a:hover { color: #6b46c1; }
+</style>
+<body>
+
+    <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio">
+        <span class="etiqueta">PORTAFOLIO WEB PERSONAL</span>
+        <h1>Hola, soy <span>Rebeca.</span></h1>
+        <p>Me gusta programar, hacer páginas web, editar videos, sacar fotos y trabajar en robótica. Acá muestro lo que voy aprendiendo y creando.</p>
+
+        <a href="#proyectos" class="btn btn-lila">Ver mis proyectos</a>
+        <a href="#contacto" class="btn btn-borde">Contactarme</a>
+
+        <div>
+            <span class="habilidad">Programación</span>
+            <span class="habilidad">Páginas web</span>
+            <span class="habilidad">Robótica</span>
+            <span class="habilidad">Fotografía</span>
+            <span class="habilidad">Edición de video</span>
+        </div>
+
+        <img src="foto-inicio.jpg" alt="Foto de Rebeca" class="foto">
+    </section>
+
+    <section id="sobre-mi">
+        <span class="etiqueta">SOBRE MÍ</span>
+        <h2>Un poco <span>sobre mí</span></h2>
+
+        <p>Soy una persona creativa, curiosa y a la que le gusta aprender cosas nuevas. Me interesan la tecnología, la robótica, la fotografía y la edición porque me gusta crear, experimentar y encontrar nuevas formas de expresar mis ideas. Quiero seguir aprendiendo sobre programación, diseño, edición y nuevas tecnologías.</p>
+
+        <div class="tarjetas">
+            <div class="tarjeta"><div class="titulo">NOMBRE</div>Rebeca Nurimar Ortega Portillo</div>
+            <div class="tarjeta"><div class="titulo">COLEGIO</div>Colegio Bautista de Encarnación</div>
+            <div class="tarjeta"><div class="titulo">CURSO</div>1er año · Bachillerato Técnico en Informática</div>
+        </div>
+
+        <h3>Me gusta y soy buena en</h3>
+        <div>
+            <span class="habilidad">Sacar fotos</span>
+            <span class="habilidad">Editar videos</span>
+            <span class="habilidad">Programar</span>
+            <span class="habilidad">Hacer páginas web</span>
+            <span class="habilidad">Robótica</span>
+        </div>
+
+        <img src="foto-sobremi.jpg" alt="Foto de Rebeca" class="foto">
+    </section>
+
+    <section id="proyectos">
+        <span class="etiqueta">PROYECTOS</span>
+        <h2>Lo que estuve <span>creando</span></h2>
+
+        <div class="proyectos">
+            <div class="proyecto">
+                <img src="foto-caidix.jpg" alt="Proyecto Caidix">
+                <span class="etiqueta-tipo">Robótica</span>
+                <h3>Proyecto Caidix</h3>
+                <p>CAIDIX es una pulsera inteligente que detecta caídas en adultos mayores y envía una alerta mediante una aplicación. Trabajé en el diseño y la programación de la pulsera.</p>
+            </div>
+
+            <div class="proyecto">
+                <img src="foto-video.jpg" alt="Edición de videos">
+                <span class="etiqueta-tipo">Edición de video</span>
+                <h3>Edición de videos · Iglesia de Dios</h3>
+                <p>Edito videos para cultos, campamentos y actividades de jóvenes, combinando videos, fotos, música y textos.</p>
+            </div>
+
+            <div class="proyecto">
+                <span class="etiqueta-tipo">Página web</span>
+                <h3>Página Web</h3>
+                <p>Una página web básica con diseño responsive.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <span class="etiqueta">CONTACTO</span>
+        <h2>¿Hablamos<span>?</span></h2>
+        <p>Escribime o llamame si querés saber más sobre mis proyectos.</p>
+
+        <div class="contacto-info"><div><div class="titulo">CORREO</div>ortegarebeca542@gmail.com</div></div>
+        <div class="contacto-info"><div><div class="titulo">TELÉFONO</div>0985 497294</div></div>
+        <div class="contacto-info"><div><div class="titulo">INSTAGRAM</div><a href="https://www.instagram.com/rebeortg" target="_blank">rebeortg</a></div></div>
+        <div class="contacto-info"><div><div class="titulo">TIKTOK</div><a href="https://www.tiktok.com/@rebeortg" target="_blank">rebeortg</a></div></div>
+    </section>
+
+</body>
+</html>
